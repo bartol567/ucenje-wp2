@@ -1,4 +1,4 @@
-use master;
+﻿use master;
 go
 drop database if exists ticketSeller;
 go
@@ -49,13 +49,13 @@ alter table eventCategory alter column name varchar (80) not null;
 insert into Users (firstName,lastName,oib,adress,email,city,registrationDate) 
 values 
 ('Ivan','Horvat','12345678901','VIM 62','ihrovat@gmail.com','Osijek','2023-11-27 16:00:00'),
-('Josip','Petru�ev','12345678911','VIM 63','jpetrusev@gmail.com','Osijek','2023-11-27 16:00:01'),
-('Darko','Mraki?','12345678921','VIM 64','dmrakic@gmail.com','Osijek','2023-11-27 16:00:02');
+('Josip','Petrušev','12345678911','VIM 63','jpetrusev@gmail.com','Osijek','2023-11-27 16:00:01'),
+('Darko','Mrakić','12345678921','VIM 64','dmrakic@gmail.com','Osijek','2023-11-27 16:00:02');
 
 select * from Users;
 
-insert into Users (firstName,lastName,oib,adress,email,city,registrationDate) values ('Hrvoje','Hrvi?','12345678888','VIM 100','HHRVIC@GMAIL.COM','Zagreb','2023-11-24 16:00:00');
+insert into Users (firstName,lastName,oib,adress,email,city,registrationDate) values ('Hrvoje','Hrvić','12345678888','VIM 100','HHRVIC@GMAIL.COM','Zagreb','2023-11-24 16:00:00');
 
 select * from Users where lastName like '%at';
 
-update Users set lastName='Radonji?' where Id=3;
+update Users set lastName='Radonjić' where Id=3;
