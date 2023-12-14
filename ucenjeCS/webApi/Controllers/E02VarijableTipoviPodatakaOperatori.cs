@@ -51,5 +51,16 @@ namespace webApi.Controllers
 
         }
 
-    }
+        [HttpGet]
+        [Route("zad5")]
+        public bool Istisu(int a, int b)
+        {
+            Console.WriteLine("a={0}", a);
+            return a == b;
+
+
+        //ruta vraca true ako je a jednkao b, inace vraca false
+        }
+
+}
 }
